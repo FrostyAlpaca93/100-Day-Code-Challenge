@@ -1,0 +1,17 @@
+# This tip calculator is useful if you need to spilt the bill between a group of people and gives the total amount each person
+# should pay including tip.
+
+
+print("Welcome to the tip calculator.")
+
+# Input the total bill amount, the agreed upon tip amount, and how many people are at the table
+
+bill = float(input("What was the total bill? "))
+tip = float(input("What percentage tip would you like to give? 10, 12, or 15? "))
+people = float(input("How many people to split the bill? "))
+
+# Splitting the bill calculation
+
+bill_tip = round((bill + (tip/100 * bill))/ people, 2)
+
+print(f"Each person should pay: {bill_tip}")
